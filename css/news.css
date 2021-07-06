@@ -6,11 +6,7 @@
   cursor: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Otomanopee One', sans-serif;
-}
-
-a, p {
+h1, h2, h3, h4, h5, h6, a, p, label {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -104,6 +100,8 @@ a, p {
   outline: none;
   border: none;
   background: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin-right: 50px;
 }
 

@@ -5,12 +5,16 @@
     cursor: none;
 }
 
-h1, h2, h3, h4, h5, h6  {
-  font-family: 'Otomanopee One', sans-serif;
+h1, h2, h3, h4, h5, h6, a, p, label {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
 }
 
 a, p, label {
-  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
 }
 
 .cont {
@@ -190,42 +194,6 @@ a, p, label {
 
     .nf2 {
       display: none;
-      position: absolute;
-      bottom: 3%;
-      left: 5%;
-      width: 3.5%;
-      height: 40%;
-      padding-top: 1%;
-      padding-bottom: 1%;
-      background: #f3f3f3;
-      box-shadow: 5px 10px 30px 10px #0000008c;
-      z-index: 3;
-      display: flex;
-      justify-content: space-around;
-      flex-direction: column;
-      transition: all 0.5s ease;
-
-      &:hover {
-        width: 26%;
-
-        .icon img {
-          justify-self: flex-start;
-        }
-      }
-
-      .icon {
-        width: 90%;
-        height: 12%;
-        margin-left: 10%;
-        margin-top: 3%;
-        display: grid;
-         img {
-           width: 25px;
-           align-self: center;
-           justify-self: center;
-         }
-      }
-
     }
 
     // content right 
@@ -401,13 +369,14 @@ a, p, label {
   z-index: 5; /* Sit on top */
   left: 0;
   top: 0;
-  width: 50%; /* Full width */
+  width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: hidden; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 
   form {
+    position: relative;
     width: 60%;
     height: 70%;
     display: flex;
@@ -469,7 +438,7 @@ a, p, label {
 .modal-content {
   background-color: #fefefe;
   margin-top: 10%; /* 15% from the top and centered */
-  margin-left: 10%;
+  margin-left: 22.5%;
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
 }
@@ -478,7 +447,7 @@ a, p, label {
 .close {
   /* Position it in the top right corner outside of the modal */
   position: absolute;
-  right: -50px;
+  right: -20%;
   top: 0;
   color: #000;
   font-size: 35px;
@@ -508,7 +477,7 @@ a, p, label {
   to {margin-right: 0;}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 
   * {
     cursor: none;
@@ -522,23 +491,25 @@ a, p, label {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    height: 100vh;
     align-items: flex-end;
 
     #logo {
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 8px;
+      left: 10px;
       svg {
+        fill: #120085;
         transform: scale(0.6);
       }
     }
 
     nav {
-      margin-top: 1%;
+      margin-top: 0;
       height: 8vh;
       width: 75%;
+      align-items: center;
       grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
       background: white;
 
       // search bar 
@@ -582,7 +553,7 @@ a, p, label {
           padding-top: 20px;
           padding-bottom: 20px;
           margin-right: 0px;
-          margin-right: 20px;
+          margin-right: 10%;
         }
 
         .nlble {
@@ -599,14 +570,123 @@ a, p, label {
       z-index: 2;
       width: 98.5%;
       height: 84vh;      
+      grid-template-rows: repeat(12, 1fr);
       box-shadow: 5px 10px 16px 1px #0000008a;
 
 
-      .aa-btn {
-        width: 25px;
-        height: 25px;
+      .aaa {
+        height: 5vh;
+        margin-top: 15px;
+        
 
+        .circle{
+          // grid-row: 1/2;
+          // width: 60px;
+          // height: 60px;
+          // margin-right: 50%;
+          // margin-top: -25%;
+          display: none;
+        }
+
+        .aa-btn {
+          grid-row: 1/2;
+          width: 25px;
+          height: 40px;
+          margin-left: 20px;
+
+          .btn-a {
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .btn-a-c {
+              grid-column: 1/2;
+              grid-row: 1/2;
+              display: grid;
+              grid-template-columns: 1fr 25px 1fr;
+              width: 25px;
+              height: 100%;
+
+              .dot-c1, .dot-c2 {
+                width: 100%;
+                height: 100%;
+                display: grid;
+
+                :nth-child(1) {
+                  grid-row: 1/2;
+                }
+                :nth-child(2) {
+                  grid-row: 2/3;
+                }
+                :nth-child(3) {
+                  grid-row: 3/4;
+                }
+              }
+
+              .dot {
+                width: 8px;
+                height: 8px;
+                background: #ffffff;
+                border-radius: 50%;
+                align-self: flex-end;
+                justify-self: center;
+              }
+            }
+          }
+        }
       }
+
+      .logo {
+        grid-row: 1/2;
+        grid-column: 3/4;
+        justify-self: flex-end;
+        padding-right: 0;
+        margin-right: 12.5%;
+
+        svg {
+          transform: scale(0.6);
+        }
+      }
+
+      // page content
+    .aa-pcon {
+      height: 99%;
+      margin-top: 0px;
+      padding-bottom: 1%;
+      padding-top: 20px;
+      padding-left: 2%;
+      padding-right: 5px;
+      grid-row: 2/13;
+
+
+      header {
+        width: 99%;
+        height: 360px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      
+
+        .kick {
+          width: 100%;
+        }
+
+        h1 {
+          font-size: 45px;
+          padding-left: 30px;
+        }
+      }
+
+      .pcon-con {
+        text-align: center;
+        mix-blend-mode: difference;
+        background: rgba(0, 0, 0, 0.596);
+        padding: 20px;
+        padding-top: 40px;
+        font-size: 12px;
+        z-index: 2;
+      }
+    }
     }
 
     .nf {
@@ -615,6 +695,8 @@ a, p, label {
 
     .nf2 {
       display: flex;
+      position: absolute;
+      justify-content: space-around;
       bottom: 0;
       left: 0;
       width: 100%;
@@ -651,7 +733,122 @@ a, p, label {
         }
       }
     }
-
-    
   }
+
+
+  /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 5; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+  form {
+    position: relative;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+
+    .imgcontainer {
+      width: 200px;
+      height: 200px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-top: 10px;
+
+  .input {
+    margin-top: 20px;
+    width: fit-content;
+    height: 50%;
+    width: 100%;
+    outline: none;
+    padding: 20px;
+    border: solid 1px black;
+  }
+
+  button {
+    text-decoration: none;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 20px;
+    color: rgb(250, 250, 250);
+    background: #120085;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 7.5px 5px 7.5px;
+    border-radius: 3pt;
+  }
+
+  a {
+    text-decoration: none;
+    color: #120085;
+  }
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-top: 22.5%; /* 15% from the top and centered */
+  margin-left: 4%;
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  display: none;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {margin-left: 50%;}
+  to {margin-right: 0;}
+}
+
+@keyframes animatezoom {
+  from {margin-left: 50%;}
+  to {margin-right: 0;}
+}
+}
+
+
+@media screen and (min-width: 550px) {
+   
+  nav {
+    .nl-cont {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
 }
