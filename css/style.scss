@@ -490,13 +490,14 @@ a, p, label {
   .cont {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    // height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     align-items: flex-end;
 
     #logo {
       position: absolute;
-      top: 8px;
-      left: 10px;
+      top: 0%;
+      left: 1%;
       svg {
         fill: #120085;
         transform: scale(0.6);
@@ -505,9 +506,8 @@ a, p, label {
 
     nav {
       margin-top: 0;
-      height: 8vh;
+      height: 8%;
       width: 75%;
-      align-items: center;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       background: white;
@@ -540,6 +540,7 @@ a, p, label {
 
       // nav links
       .nl-cont {
+        align-self: flex-start;
         justify-self: flex-start; 
         width: 100%;
 
@@ -569,13 +570,13 @@ a, p, label {
     .aa {
       z-index: 2;
       width: 98.5%;
-      height: 84vh;      
+      height: 84%;      
       grid-template-rows: repeat(12, 1fr);
       box-shadow: 5px 10px 16px 1px #0000008a;
 
 
       .aaa {
-        height: 5vh;
+        height: 5%;
         margin-top: 15px;
         
 
@@ -703,7 +704,7 @@ a, p, label {
       flex-direction: row;
       justify-content: center;
       padding: 0;
-      height: 8vh;
+      height: 8%;
       border-radius: 0;
       justify-content: space-between;
       align-items: center;
@@ -752,7 +753,7 @@ a, p, label {
   form {
     position: relative;
     width: 90%;
-    height: 70%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -764,8 +765,7 @@ a, p, label {
       height: 200px;
 
       img {
-        width: 100%;
-        height: 100%;
+        transform: scale(0.8);
       }
     }
   }
@@ -777,10 +777,10 @@ a, p, label {
   flex-direction: column;
   justify-content: center;
   width: 60%;
-  margin-top: 10px;
+  margin-top: 2%;
 
   .input {
-    margin-top: 20px;
+    margin-top: 2%;
     width: fit-content;
     height: 50%;
     width: 100%;
@@ -800,7 +800,7 @@ a, p, label {
     background: #120085;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 5px 7.5px 5px 7.5px;
+    padding: 10px 7.5px 5px 7.5px;
     border-radius: 3pt;
   }
 
@@ -814,7 +814,8 @@ a, p, label {
 .modal-content {
   background-color: #fefefe;
   margin-top: 22.5%; /* 15% from the top and centered */
-  margin-left: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
   border: 1px solid #888;
   width: 40%; /* Could be more or less, depending on screen size */
 }
@@ -851,4 +852,30 @@ a, p, label {
     }
   }
 
+}
+
+
+@media screen and (max-width: 330px) {
+   
+  .cont {
+    .modal {
+      form {
+        height: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        .imgcontainer {
+          transform: scale(0.8);
+        }
+      }
+    }
+
+    .container {
+      width: 80%;
+      margin-top: 0;
+
+      .input {
+        padding: 8px;
+      }
+    }
+  }
 }

@@ -610,15 +610,15 @@ a, p, label {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
   }
   .cont #logo {
     position: absolute;
-    top: 8px;
-    left: 10px;
+    top: 0%;
+    left: 1%;
   }
   .cont #logo svg {
     fill: #120085;
@@ -627,11 +627,8 @@ a, p, label {
   }
   .cont nav {
     margin-top: 0;
-    height: 8vh;
+    height: 8%;
     width: 75%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: 1fr;
@@ -663,6 +660,8 @@ a, p, label {
     height: 3px;
   }
   .cont nav .nl-cont {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     justify-self: flex-start;
     width: 100%;
   }
@@ -687,14 +686,14 @@ a, p, label {
   .cont .aa {
     z-index: 2;
     width: 98.5%;
-    height: 84vh;
+    height: 84%;
     -ms-grid-rows: (1fr)[12];
         grid-template-rows: repeat(12, 1fr);
     -webkit-box-shadow: 5px 10px 16px 1px #0000008a;
             box-shadow: 5px 10px 16px 1px #0000008a;
   }
   .cont .aa .aaa {
-    height: 5vh;
+    height: 5%;
     margin-top: 15px;
   }
   .cont .aa .aaa .circle {
@@ -832,7 +831,7 @@ a, p, label {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0;
-    height: 8vh;
+    height: 8%;
     border-radius: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -893,7 +892,7 @@ a, p, label {
   .modal form {
     position: relative;
     width: 90%;
-    height: 70%;
+    height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -914,8 +913,8 @@ a, p, label {
     height: 200px;
   }
   .modal form .imgcontainer img {
-    width: 100%;
-    height: 100%;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   .container {
     position: relative;
@@ -930,10 +929,10 @@ a, p, label {
         -ms-flex-pack: center;
             justify-content: center;
     width: 60%;
-    margin-top: 10px;
+    margin-top: 2%;
   }
   .container .input {
-    margin-top: 20px;
+    margin-top: 2%;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
@@ -954,7 +953,7 @@ a, p, label {
     background: #120085;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 5px 7.5px 5px 7.5px;
+    padding: 10px 7.5px 5px 7.5px;
     border-radius: 3pt;
   }
   .container a {
@@ -966,7 +965,8 @@ a, p, label {
     background-color: #fefefe;
     margin-top: 22.5%;
     /* 15% from the top and centered */
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
     border: 1px solid #888;
     width: 40%;
     /* Could be more or less, depending on screen size */
@@ -1006,6 +1006,25 @@ a, p, label {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .cont .modal form {
+    height: 90%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  .cont .modal form .imgcontainer {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+  .cont .container {
+    width: 80%;
+    margin-top: 0;
+  }
+  .cont .container .input {
+    padding: 8px;
   }
 }
 /*# sourceMappingURL=style.css.map */
