@@ -895,8 +895,8 @@ a, p, label {
     }
 
     .aa {
-      margin-top: 9%;
-      height: 78%;
+      margin-top: 12%;
+      height: 77%;
     }
     .aa-pcon {
         width: 100%;
@@ -919,24 +919,4 @@ a, p, label {
   }
 }
 
-@media screen and (max-width: 330px) {
-  .cont {
-
-    a {
-      padding-top: 0;
-    }
-
-    .nav {
-      .nl-cont {
-        .nl {
-          padding: 0px 0;
-          margin: 0 0% 0 0;
-        }
-        .s-btn {
-          padding: 0;
-          margin: 0 0px 0 0;
-        }
-      }
-    }
-  }
-}
+// 
