@@ -14,7 +14,6 @@
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 50;
-  opacity: 0;
 }
 
 @-webkit-keyframes cursorAnim {
@@ -94,7 +93,6 @@
 }
 
 .expand {
-  opacity: 1;
   -webkit-animation: cursorAnim3 .5s forwards;
           animation: cursorAnim3 .5s forwards;
 }
