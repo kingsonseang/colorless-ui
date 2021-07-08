@@ -1038,13 +1038,13 @@ a, p, label {
   }
 }
 
-@media screen and (max-device-height: 500px) {
+@media screen and (max-device-height: 550px) {
   .cont nav {
     font-size: 12px;
     font-weight: 100;
   }
   .cont .aa {
-    margin-top: 6%;
+    margin-top: 9%;
     height: 78%;
   }
   .cont .aa-pcon {
@@ -1064,6 +1064,22 @@ a, p, label {
   }
   .cont .aa-pcon header h1 {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cont a {
+    padding-top: 0;
+  }
+  .cont .nav .nl-cont .nl {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+  }
+  .cont .nav .nl-cont .s-btn {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
   }
 }
 /*# sourceMappingURL=style.css.map */
