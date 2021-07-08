@@ -13,7 +13,7 @@
           animation: cursorAnim .5s infinite alternate;
   mix-blend-mode: difference;
   pointer-events: none;
-  z-index: 5;
+  z-index: 50;
 }
 
 @-webkit-keyframes cursorAnim {

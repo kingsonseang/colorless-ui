@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6, a, p, label {
 
 .cont .aa-b .aa-b-con .vrh {
   position: absolute;
-  top: 50px;
+  top: 20px;
   right: 30px;
   -webkit-transform: rotate(15deg);
           transform: rotate(15deg);
@@ -261,5 +261,171 @@ h1, h2, h3, h4, h5, h6, a, p, label {
 .cont .aa-b .aa-b-con .launch p a {
   text-decoration: none;
   color: #120085;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: absolute;
+  /* Stay in place */
+  z-index: 5;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: hidden;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal .containermodal {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  pointer-events: none;
+}
+
+.modal form {
+  pointer-events: all;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  position: relative;
+  width: 40%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 15px;
+}
+
+.modal form .imgcontainer {
+  width: 200px;
+  height: 200px;
+}
+
+.modal form .imgcontainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  margin-top: 2%;
+}
+
+.container .input {
+  margin-top: 2%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50%;
+  width: 100%;
+  outline: none;
+  padding: 20px;
+  border: solid 1px black;
+}
+
+.container button {
+  text-decoration: none;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 20px;
+  color: #fafafa;
+  background: #120085;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 7.5px 5px 7.5px;
+  border-radius: 3pt;
+}
+
+.container a {
+  text-decoration: none;
+  color: #120085;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin-top: 5%;
+  /* 15% from the top and centered */
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 1px solid #888;
+  width: 60%;
+  /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  /* Position it in the top right corner outside of the modal */
+  position: absolute;
+  right: -20%;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    margin-left: 50%;
+  }
+  to {
+    margin-right: 0;
+  }
 }
 /*# sourceMappingURL=news.css.map */
