@@ -787,7 +787,7 @@ a, p, label {
   }
   .cont .aa .aa-pcon {
     height: 99%;
-    margin-top: 0px;
+    margin-top: 100px;
     padding-bottom: 1%;
     padding-top: 20px;
     padding-left: 2%;
@@ -815,10 +815,17 @@ a, p, label {
     text-align: center;
     mix-blend-mode: difference;
     background: rgba(0, 0, 0, 0.596);
-    padding: 20px;
-    padding-top: 40px;
+    padding: 80px;
+    padding-top: 60px;
     font-size: 12px;
+    margin-top: 20px;
     z-index: 2;
+  }
+  .cont .aa .aa-pcon .pcon-con h3 {
+    padding-top: 20px;
+  }
+  .cont .aa .aa-pcon .pcon-con p {
+    padding-top: 10px;
   }
   .cont .nf {
     display: none;
@@ -1008,7 +1015,7 @@ a, p, label {
   }
 }
 
-@media screen and (max-width: 800px) and (min-width: 550px) {
+@media screen and (max-width: 800px) and (max-width: 550px) {
   nav .nl-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1038,7 +1045,7 @@ a, p, label {
   }
 }
 
-@media screen and (max-width: 800px) and (max-device-height: 550px) {
+@media screen and (max-width: 800px) and (max-device-width: 550px) {
   .cont nav {
     font-size: 12px;
     font-weight: 100;

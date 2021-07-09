@@ -92,8 +92,26 @@ h1, h2, h3, h4, h5, h6, a, p, label {
     .aa-a {
         grid-column: 1;
         grid-row: 2/12;
-
         display: grid;
+        background: white;
+        height: 98%;
+        width: 100%;
+        justify-self: flex-end;
+
+        .carosel {
+          height: 90%;
+          width: 100%;
+          align-self: flex-start;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          justify-content: space-around;
+
+          img {
+            height: 40%;
+          }
+        }
     }
 
     .aa-b {
@@ -130,7 +148,7 @@ h1, h2, h3, h4, h5, h6, a, p, label {
             .vrh {
                 position: absolute;
                 top: 20px;
-                right: 30px;
+                right: 40px;
                 transform: rotate(15deg);
                 width: 35%;
             }
@@ -189,8 +207,8 @@ h1, h2, h3, h4, h5, h6, a, p, label {
 
             .launch {
                 position: absolute;
-                left: 50px;
-                top: -50px;
+                left: 100px;
+                top: -10px;
                 width: 200px;
                 height: 200px;
                 border-radius: 50%;
@@ -201,8 +219,7 @@ h1, h2, h3, h4, h5, h6, a, p, label {
                 text-align: center;
 
                 p {
-                    padding-top: 30px;
-                    padding-left: 20px;
+                    text-align: center;
 
                     a {
                         text-decoration: none;
