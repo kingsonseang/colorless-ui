@@ -1008,7 +1008,7 @@ a, p, label {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 800px) and (min-width: 550px) {
   nav .nl-cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1019,7 +1019,7 @@ a, p, label {
   }
 }
 
-@media screen and (max-width: 330px) {
+@media screen and (max-width: 800px) and (max-width: 330px) {
   .cont .modal form {
     height: 90%;
     margin-top: 5%;
@@ -1038,14 +1038,14 @@ a, p, label {
   }
 }
 
-@media screen and (max-device-height: 550px) {
+@media screen and (max-width: 800px) and (max-device-height: 550px) {
   .cont nav {
     font-size: 12px;
     font-weight: 100;
   }
   .cont .aa {
-    margin-top: 12%;
-    height: 77%;
+    margin-top: 5%;
+    height: 82%;
   }
   .cont .aa-pcon {
     width: 100%;
@@ -1071,13 +1071,10 @@ a, p, label {
   .cont a {
     padding-top: 0;
   }
-  .cont .nav .nl-cont .nl {
-    padding: 0px 0;
-    margin: 0 0% 0 0;
-  }
-  .cont .nav .nl-cont .s-btn {
-    padding: 0;
-    margin: 0 0px 0 0;
+  .cont nav .nl-cont .nl, .cont nav .nl-cont .s-btn {
+    padding: 2px;
+    padding-right: 5px;
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

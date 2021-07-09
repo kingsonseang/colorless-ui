@@ -845,7 +845,7 @@ a, p, label {
   from {margin-left: 50%;}
   to {margin-right: 0;}
 }
-}
+
 
 
 @media screen and (min-width: 550px) {
@@ -895,8 +895,8 @@ a, p, label {
     }
 
     .aa {
-      margin-top: 12%;
-      height: 77%;
+      margin-top: 5%;
+      height: 82%;
     }
     .aa-pcon {
         width: 100%;
@@ -918,29 +918,25 @@ a, p, label {
     }
   }
 }
+}
+
 
 @media screen and (max-device-height: 550px) {
-  .cont {
 
-    a {
+  .cont {
+    a{
       padding-top: 0;
     }
 
-    .nav {
+    nav {
       .nl-cont {
-        .nl {
-          padding: 0px 0;
-          margin: 0 0% 0 0;
-        }
-        .s-btn {
-          padding: 0;
-          margin: 0 0px 0 0;
+        .nl, .s-btn {
+          padding: 2px;
+          padding-right: 5px;
+          margin: 0;
         }
       }
     }
 
-    .aa {
-
-    }
   }
 }
