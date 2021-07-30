@@ -428,7 +428,7 @@ a, p, label {
 }
 
 .cont ::-webkit-scrollbar {
-  width: 6px;
+  width: 2px;
 }
 
 .cont ::-webkit-scrollbar-thumb {
