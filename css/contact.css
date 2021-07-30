@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 100);
+  height: 100vh;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body nav {
+  width: 100%;
+  height: 10%;
+  padding: 1% 0.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .logo {
+  height: 100%;
+  border: none;
+  outline: none;
+}
+
+body nav .nav-r {
+  width: 55%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .nav-r .nav-ls {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body nav .nav-r .nav-ls .nav-l {
+  font-size: 110%;
+  text-decoration: none;
+  color: black;
+  outline: none;
+  border: none;
+}
+
+body nav .nav-r .cart {
+  font-size: 110%;
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body nav .nav-r .cart i {
+  padding-right: 20%;
+}
+
+body nav .nav-r .usimg {
+  height: 80%;
+}
+
+body .get {
+  font-size: 350%;
+  color: #C9C9C9;
+  margin: 4.5% 0 2% 0;
+}
+
+body .cc {
+  position: relative;
+  width: 80%;
+  height: 18%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+body .cc .circle1 {
+  position: absolute;
+  top: -50%;
+  left: 0;
+  content: '';
+  width: 11%;
+  height: 100%;
+  border-radius: 50%;
+  background: #001074;
+  z-index: -1;
+}
+
+body .cc .circle2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  content: '';
+  width: 2%;
+  height: 20%;
+  border-radius: 50%;
+  background: #001074;
+  z-index: -1;
+}
+
+body .cc .card {
+  width: 25%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.5em;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+body .cc .card:hover {
+  -webkit-box-shadow: 6px 4px 8px #a2a7cc52;
+          box-shadow: 6px 4px 8px #a2a7cc52;
+  -webkit-backdrop-filter: blur(14px);
+          backdrop-filter: blur(14px);
+  -webkit-transition: all ease-in 0.5s;
+  transition: all ease-in 0.5s;
+}
+
+body .cc .card i {
+  font-size: 320%;
+}
+
+body .cc .card a, body .cc .card p {
+  margin-top: 10%;
+  text-decoration: none;
+  color: black;
+}
+
+body .bt {
+  width: 70%;
+  height: 40%;
+  margin: 2.5% 0 0 0;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5em;
+  position: relative;
+}
+
+body .bt::after {
+  position: absolute;
+  top: -40%;
+  right: -15%;
+  content: '';
+  width: 30%;
+  height: 100%;
+  border-radius: 50%;
+  background: #001074;
+  z-index: -1;
+}
+
+body .bt .left {
+  width: 30%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .bt .left .fill {
+  height: 20%;
+}
+
+body .bt .left .fill p {
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 0 2.5% 0;
+}
+
+body .bt .left .fill .finput {
+  width: 80%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: solid 1px black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 0.5em;
+}
+
+body .bt .left .fill .finput i {
+  margin: 0 0 0 5%;
+}
+
+body .bt .left .fill .finput input {
+  width: 85%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.5em;
+}
+
+body .bt .right {
+  width: 60%;
+  height: 85%;
+  padding: 0.6% 0 0 0;
+}
+
+body .bt .right p {
+  font-size: 90%;
+  font-weight: 600;
+  margin: 0 0 1% 0;
+}
+
+body .bt .right #message {
+  resize: none;
+  width: 100%;
+  height: 70%;
+  background: #d9ddee;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+  padding: 2%;
+}
+
+body .bt .right button {
+  margin: 2%  0 0 0;
+  width: 20%;
+  height: 12%;
+  background: #001074;
+  color: white;
+  border-radius: 0.5em;
+  border: none;
+  outline: none;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    overflow: hidden;
+    width: 100;
+  }
+  body nav {
+    height: 8%;
+    padding: 0.5% 4.5%;
+    position: fixed;
+  }
+  body nav .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body nav .logo .logoimg {
+    width: 50%;
+  }
+  body nav .nav-r {
+    padding: 0 2%;
+    width: 75%;
+    font-size: 80%;
+  }
+  body nav .nav-r .nav-ls {
+    width: 75%;
+  }
+  body nav .nav-r .usimg {
+    height: 50%;
+  }
+  body .get {
+    font-size: 195%;
+    margin: 22% 0 2% 0;
+  }
+  body .cc {
+    width: 98%;
+    height: 25%;
+  }
+  body .cc .circle1 {
+    top: -20%;
+    left: -10%;
+    height: 50%;
+    width: 25%;
+  }
+  body .cc .card {
+    font-size: 70%;
+    -webkit-box-shadow: 6px 4px 8px #a2a7cc52;
+            box-shadow: 6px 4px 8px #a2a7cc52;
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+  }
+  body .cc .card p {
+    display: none;
+  }
+  body .bt {
+    width: 100%;
+    height: 67%;
+    background: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+  }
+  body .bt::after {
+    top: 50%;
+    right: -50%;
+    width: 100%;
+    height: 80%;
+  }
+  body .bt .left {
+    width: 85%;
+    height: 80%;
+  }
+  body .bt .left .fill .finput {
+    width: 100%;
+  }
+  body .bt .left .fill .finput input {
+    background: none;
+  }
+  body .bt .right {
+    width: 85%;
+  }
+  body .bt .right button {
+    width: 35%;
+  }
+}
+/*# sourceMappingURL=contact.css.map */

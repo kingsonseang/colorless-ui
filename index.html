@@ -4,174 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/cursor.css">
-    <title>Karins Dojo</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Otomanopee+One&family=Roboto:ital,wght@0,300;0,400;1,100;1,300&display=swap" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="./img/logo2.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
+    <title>Karens Dojo</title>
 </head>
 <body>
-    
-    <!-- container -->
-    <section class="cont">
-
-        <!-- The Modal -->
-<div id="id01" class="modal">
-  
-    <!-- Modal Content -->
-    <form class="modal-content animate" action="/action_page.php">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <div class="imgcontainer">
-        <img src="./img/icons8-test-account-90.png" alt="Avatar" class="avatar">
-      </div>
-  
-      <div class="container">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-        <input class="input" type="text" placeholder="Enter Username" name="uname" required>
-  
-        <input class="input" type="password" placeholder="Enter Password" name="psw" required>
-  
-        <button type="submit">Login</button>
-        <label>
-          <input class="check" type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-      </div>
-  
-      <div class="container">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <span class="psw"><p>Forgot <a href="#">password?</a></p></span>
-      </div>
-    </form>
-</div>
-
-        <a id="logo" href="./index.html">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <path d="M52.011,43.1l2.846-1.383-2.546-1.195L42.183,21.284l9.2,4.641L60.9,37.491l16.06,1.335,5.727,2.888-4.866,2.434L60.9,45.555l-9.871,12-9,4.5Z" transform="translate(62.054 -42.029) rotate(90)"/>
-            </svg>
+    <!-- nav bar -->
+    <nav>
+        <a href="./index.html" class="logo">
+            <img src="./img/Vector 6.png" alt="logo" class="logoimg" >
         </a>
-
-        <!-- nav -->
-        <nav>
-
-            <!-- search bar -->
-            <div class="sbar">
-                <div class="scont">
-                    <div class="s-icon1"></div>
-                    <div class="s-icon2"></div>
-                </div>
+        <div class="nav-r">
+            <div class="nav-ls">
+                <a href="./index.html" class="nav-l">Home</a>
+                <a href="./contact.html" class="nav-l">Contact</a>
+                <a href="./services.html" class="nav-l">Services</a>
+                <a href="./team.html" class="cart"><i class="fab fa-opencart"></i><p>cart</p></a>
             </div>
-
-            <!-- nav links -->
-            <div class="nl-cont">
-                <a href="./news.html" class="nl">News</a>
-                <a href="./services.html" class="nl">Services</a>
-                <button class="s-btn" onclick="document.getElementById('id01').style.display='block'">Sign in</button>
-                <a href="#" class="nl nlble">Get new user 20% Off</a>
-            </div>
-
-        </nav>
-
-        <!-- content left -->
-        <div class="a b-lr">
-            <div style="padding-top: 20%;">
-                <p>We at ACE MA are creating a system,<br> that will benefit the society as a whole,<br><br> with a team of Experienced engineers<br> but to do that we need your support<br> become a member today <br> and help us realizise this dream into reality</p>
-            </div>
-            <button>Sign up</button>
-            <p>Become a <a href="#"> Member</a> today</p>
+            <img src="./img/icons8-test-account-90.png" alt="" class="usimg">
         </div>
-
-        <div class="nf b-lr">
-            <div class="icon"><img src="./img/fb-d.png" alt=""></div>
-            <div class="icon"><img src="./img/ms-d.png" alt=""></div>
-            <div class="icon"><img src="./img/in-d.png" alt=""></div>
-            <div class="icon"><img src="./img/twt-d.png" alt=""></div>
-            <div class="icon"><img src="./img/twc-d.png" alt=""></div>
-            <div class="icon"><img src="./img/yt-d.png" alt=""></div>
-        </div>
-
-        <div class="nf2">
-            <div class="icon"><img src="./img/fb-m.png" alt=""></div>
-            <div class="icon"><img src="./img/ms-m.png" alt=""></div>
-            <div class="icon"><img src="./img/in-m.png" alt=""></div>
-            <div class="icon"><img src="./img/twt-m.png" alt=""></div>
-            <div class="icon"><img src="./img/twc-m.png" alt=""></div>
-            <div class="icon"><img src="./img/yt-m.png" alt=""></div>
-        </div>
-
-        <!-- content right -->
-        <div class="aa b-lr">
-            <div class="aaa">
-                <!-- circle cut out  -->
-                <div class="circle"></div>
-
-                <!-- btn -->
-                <div class="aa-btn">
-                    <div class="btn-a">
-                        <div class="btn-a-c">
-                            <div class="dot-c1">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                            <div class="dot-c2">
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                                <div class="dot"></div>
-                            </div>
-                        </div>
-                    </div>
+    </nav>
+    <!-- page left -->
+    <div class="page-left">
+        <div class="plc">
+            <img src="./img/bg.png" alt="background image">
+            <div class="pla">
+                <div class="header">
+                    <h1>Secure you to <br> Secure the world.</h1>
+                    <p>Blur the lines of Virtual & Reality</p>
                 </div>
-                <!-- btn ends  -->
-
-                <!-- page branding -->
-                <div class="logo">
-                    <svg xmlns="http://www.w3.org/2000/svg">
-                        <path d="M52.011,43.1l2.846-1.383-2.546-1.195L42.183,21.284l9.2,4.641L60.9,37.491l16.06,1.335,5.727,2.888-4.866,2.434L60.9,45.555l-9.871,12-9,4.5Z" transform="translate(62.054 -42.029) rotate(90)"/>
-                    </svg>
-                </div>
-
+                <button class="gtc">
+                    <img src="./img/vr-glasses.png" alt="vr-glasses">
+                    <p>Get Connected</p>
+                </button>
             </div>
-
-            <!-- page content -->
-            <div class="aa-pcon">
-                <header>
-                    <img src="./img/images.png" alt="" class="kick">
-                    <h1>Secure you to Secure the World</h1>
-                </header>
-                <div class="pcon-con">
-                    <h2>
-                        Karens Dojo Developed by ACE MA is a VR simulation Program <br> aimed at teaching unarmed combat techniques from the comfort of your home
-                    </h2>
-                    <h3>
-                        What is Virtual Reality?
-                    </h3>
-                    <p>
-                        virtual Reality is a fairly simple concept, it works by immersing the user in a computer generated three-dimensional world. Usually used alongside a VR headset, to  change their reality to what's in front of them.
-                    </p>
-                    <h3>
-                        What is VR fitness?
-                    </h3>
-                    <p>
-                        By utilizing Virtual reality to trick the brain in a certian way, immersing the user in a workout enviromnent with your body as the controller, <br> that means in a boxing simulation if the avatar needs to throw some punches you'll be doing it in real life
-                    </p>
-                    <h3>Why is VR fitness better?</h3>
-                    <p>
-                        according to study VR fitness has proved to improve brain and body connection, in a possible scenario a user feels the need ot pucnch when the game avatar is beign attacked similar to when fighting a real opponent
-                    </p>
-                    <p>
-                        It also helps to build technique and coordination, a test condocted with tha asssistance of a boxing instructor proved that there is a significant improvement in precision and reflex
-                    </p>
+        </div>
+        <div class="btc">
+            <img src="./img/icons8-test-account-90.png" alt="user image" class="userimg">
+            <div class="social">
+                <p>We're Social in Reality</p>
+                <div class="mlc">
+                    <a href="#" class="ml"><img src="./img/icons8-facebook-30.png" alt=""></a>
+                    <a href="#" class="ml"><img src="./img/icons8-facebook-messenger-30.png" alt=""></a>
+                    <a href="#" class="ml"><img src="./img/icons8-instagram-30.png" alt=""></a>
+                    <a href="#" class="ml"><img src="./img/icons8-twitter-30.png" alt=""></a>
                 </div>
             </div>
         </div>
-        
-    </section>
-    
-    <div class="cursor"></div>
+    </div>
 
-    <script src="./cursor.js"></script>
-    <script src="./app.js"></script>
 
+    <!-- page right -->
+    <div class="page-right">
+
+        <!-- mobile -->
+        <div class="pla2">
+            <div class="header">
+                <h1>Secure you to <br> Secure the world.</h1>
+                <p>Blur the lines of Virtual & Reality</p>
+            </div>
+            <button class="gtc">
+                <img src="./img/vr-glasses.png" alt="vr-glasses">
+                <p>Get Connected</p>
+            </button>
+        </div>
+
+        <div class="prtc">
+            <header>
+                <h1>Karen's Dojo</h1>
+                <p>Developed by ACE MA</p>
+            </header>
+            <p class="abs">
+                Karen's Dojo is a Virtual Reality simulation Program Aimed at teaching Unarmed combat from the comfort of your home whilst working out.
+            </p>
+            <div class="cont">
+                <h2>
+                    What is Virtual Reality?
+                </h2>
+                <p>
+                    Virtual Reality is a fairly simple concept, it works by immersing the user in a computer generated three-dimensional world, Usually used alongside a VR headset to change their perspective reality to a new world in front of them.
+                </p>
+                <h3>
+                    How does Karen's Dojo work?
+                </h3>
+                <p>
+                    By encoprating an already existing concept called 'Virual Reality Workout' or 'VR fitness', our tam at ACE MA created a program by which th user get to experience seeminly real time situations and teaching the user possible ways to overcome such situations.
+                </p>
+                <h3>
+                    What is VR fitness?
+                </h3>
+                <p>
+                    By utilizing Virtual reality to trick the brain in a certian way, immersing the user in a workout enviromnent with your body as the controller, that means in a boxing simulation if the avatar needs to throw some punches you'll be doing it in real life.
+                </p>
+                <h3>
+                    Why is VR fitness better?
+                </h3>
+                <p>
+                    according to study VR fitness has proved to improve brain and body connection and coordination, in a possible scenario a user feels the need ot pucnch when the game avatar is beign attacked similar to when fighting a real opponent.
+                </p>
+                <h3>
+                    Is it worth it to try Karen's Dojo?
+                </h3>
+                <p class="ls">
+                    It also helps to build technique and coordination, a test condocted with tha asssistance of a boxing instructor proved that there is a significant improvement in precision and reflex than when fighting a puching bag.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sli">
+        <img src="./img/icons8-test-account-90.png" alt="user image" class="userimg">
+        <a href="#" class="ml"><img src="./img/icons8-facebook-30.png" alt=""></a>
+        <a href="#" class="ml"><img src="./img/icons8-facebook-messenger-30.png" alt=""></a>
+        <a href="#" class="ml"><img src="./img/icons8-instagram-30.png" alt=""></a>
+        <a href="#" class="ml"><img src="./img/icons8-twitter-30.png" alt=""></a>
+    </div>
 </body>
 </html>

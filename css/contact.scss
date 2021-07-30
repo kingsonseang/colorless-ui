@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, p {
+    cursor: default;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    nav {
+        width: 100%;
+        height: 10%;
+        padding: 1% 0.5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            height: 100%;
+            border: none;
+            outline: none;
+        }
+
+        .nav-r {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-ls {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+
+                .nav-l {
+                    font-size: 110%;
+                    text-decoration: none;
+                    color: black;
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            .cart {
+                font-size: 110%;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                align-items: center;
+
+                i {
+                    padding-right: 20%;
+                }
+            }
+
+            .usimg {
+                height: 80%;
+            }
+        }
+    }
+
+    .get {
+        font-size: 350%;
+        color: #C9C9C9;
+        margin: 4.5% 0 2% 0;
+    }
+
+    .cc {
+        position: relative;
+        width: 80%;
+        height: 18%;
+        display: flex;
+        justify-content: space-evenly;
+        transition: all ease 0.5s;
+
+        .circle1 {
+            position: absolute;
+            top: -50%;
+            left: 0;
+            content: '';
+            width: 11%;
+            height: 100%;
+            border-radius: 50%;
+            background: #001074;
+            z-index: -1;
+        }
+
+        .circle2 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            content: '';
+            width: 2%;
+            height: 20%;
+            border-radius: 50%;
+            background: #001074;
+            z-index: -1;
+        }
+
+        .card {
+            width: 25%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 0.5em;
+            color: black;
+            cursor: pointer;
+            text-decoration: none;
+            
+
+            &:hover {
+                box-shadow: 6px 4px 8px #a2a7cc52;
+                // background: #F2F2F2;
+                backdrop-filter: blur(14px);
+                transition: all ease-in 0.5s;
+            }
+
+            i {
+                font-size: 320%;
+            }
+
+            a, p{
+                margin-top: 10%;
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+
+    .bt {
+        width: 70%;
+        height: 40%;
+        margin: 2.5% 0 0 0;
+        background: white;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 0.5em;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            top: -40%;
+            right: -15%;
+            content: '';
+            width: 30%;
+            height: 100%;
+            border-radius: 50%;
+            background: #001074;
+            z-index: -1;
+        }
+
+        .left {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .fill {
+                height: 20%;
+
+                p {
+                    font-size: 90%;
+                    font-weight: 600;
+                    margin: 0 0 2.5% 0;
+                }
+
+                    .finput {
+                        width: 80%;
+                        height: 70%;
+                        display: flex;
+                        justify-content: space-between;
+                        border: solid 1px black;
+                        align-items: center;
+                        border-radius: 0.5em;
+
+                        i {
+                            margin: 0 0 0 5%;
+                        }
+
+                        input {
+                            width: 85%;
+                            height: 100%;
+                            border: none;
+                            outline: none;
+                            border-radius: 0.5em;
+                        }
+                    }           
+            }
+        }
+
+        .right {
+            width: 60%;
+            height: 85%;
+            padding: 0.6% 0 0 0;
+
+            p {
+                font-size: 90%;
+                font-weight: 600;
+                margin: 0 0 1% 0;
+            }
+            #message {
+                resize: none;
+                width: 100%;
+                height: 70%;
+                background: #d9ddee;
+                border-radius: 0.5em;
+                border: none;
+                outline: none;
+                padding: 2%;
+            }
+
+            button {
+                margin: 2%  0 0 0;
+                width: 20%;
+                height: 12%;
+                background: #001074;
+                color: white;
+                border-radius: 0.5em;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        overflow: hidden;
+        width: 100;
+
+        nav {
+            height: 8%;
+            padding: 0.5% 4.5%;
+            position: fixed;
+
+            .logo {
+                display: flex;
+                align-items: center;
+
+                .logoimg {
+                    width: 50%;
+                }
+            }
+
+            .nav-r {
+                padding: 0 2%;
+                width: 75%;
+                font-size: 80%;
+
+                .nav-ls {
+                    width: 75%;
+                }
+
+                .usimg {
+                    height: 50%;
+                }
+            }
+        }
+
+        .get {
+            font-size: 195%;
+            margin: 22% 0 2% 0;
+        }
+
+        .cc {
+            width: 98%;
+            height: 25%;
+
+            .circle1 {
+                top: -20%;
+                left: -10%;
+                height: 50%;
+                width: 25%;
+            }
+
+            .card {
+                font-size: 70%;
+                box-shadow: 6px 4px 8px #a2a7cc52;
+                // background: #F2F2F2;
+                backdrop-filter: blur(5px);
+
+                p {
+                    display: none;
+                }
+            }
+        }
+
+        .bt {
+            width: 100%;
+            height: 67%;
+            background: none;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+
+            &::after {
+                top: 50%;
+                right: -50%;
+                width: 100%;
+                height: 80%;
+            }
+
+
+            .left {
+                width: 85%;
+                height: 80%;
+
+                .fill {
+                    .finput {
+                        width: 100%;
+
+                        input {
+                            background: none;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 85%;
+
+                button {
+                    width: 35%;
+                }
+            }
+        }
+    }
+}

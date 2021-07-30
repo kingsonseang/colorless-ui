@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+p {
+    cursor: default;
+}
+
+body {
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    height: 100vh;
+    background: #CFCECE;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // nav bar
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 10%;
+        padding: 1% 4.5%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 3;
+        align-items: center;
+
+        .logo {
+            height: 100%;
+            border: none;
+            outline: none;
+
+            .logoimg {
+                width: 100%;
+            }
+        }
+
+        .nav-r {
+            width: 55%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .nav-ls {
+                width: 50%;
+                display: flex;
+                justify-content: space-between;
+
+                .nav-l {
+                    font-size: 110%;
+                    text-decoration: none;
+                    color: black;
+                    outline: none;
+                    border: none;
+                }
+            }
+
+            .cart {
+                font-size: 110%;
+                text-decoration: none;
+                color: black;
+                display: flex;
+                align-items: center;
+
+                i {
+                    padding-right: 20%;
+                }
+            }
+
+            .usimg {
+                height: 80%;
+            }
+        }
+    }
+}
