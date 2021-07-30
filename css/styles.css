@@ -353,12 +353,12 @@ body .sli {
     width: 50%;
   }
   body nav .nav-r {
-    padding: 0 5%;
-    width: 75%;
+    padding: 0 0 0 5%;
+    width: 85%;
     font-size: 80%;
   }
   body nav .nav-r .nav-ls {
-    width: 75%;
+    width: 80%;
   }
   body nav .nav-r .usimg {
     height: 50%;
